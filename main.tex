@@ -1,0 +1,19 @@
+\documentclass{scrartcl}
+\usepackage{graphicx}
+\usepackage{tikz}
+
+\begin{document}
+  \includegraphics{pic.pdf}
+
+  \begin{tikzpicture}
+    \node [draw, dashed] {\includegraphics{pic.pdf}};
+  \end{tikzpicture}
+
+  \begin{tikzpicture}
+    \node [draw, dashed] {\mbox{\includegraphics{pic.pdf}}};
+  \end{tikzpicture}
+
+  \begin{tikzpicture}
+    \node [draw, dashed] {\parbox{1.5cm}{\includegraphics{pic.pdf}}};
+  \end{tikzpicture}
+\end{document}
