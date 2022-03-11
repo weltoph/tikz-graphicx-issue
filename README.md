@@ -11,7 +11,7 @@ line. `main.tex` includes `pic.pdf` via `\includegraphics{pic.pdf}` four times:
 * as `\node[draw, dashed] {\mbox{\includegraphics{pic.pdf}}}` in a
   `tikzpicture` environment, and
 * as `\node[draw, dashed] {\parbox{...}{\includegraphics{pic.pdf}}}` in a
-  `tikzpictur` environment.
+  `tikzpicture` environment.
 
 For the latter three the TikZ style of the node changes the behavior of the
 included *pdf file*; i.e., we obtain:
