@@ -6,9 +6,12 @@ This repository demonstrates a strange behavior of `LaTeX`. It contains two
 line. `main.tex` includes `pic.pdf` via `\includegraphics{pic.pdf}` four times:
 
 * as `\includegraphics{pic.pdf}`,
-* as `\node[draw, dashed] {\includegraphics{pic.pdf}}`,
-* as `\node[draw, dashed] {\mbox{\includegraphics{pic.pdf}}}`, and
-* as `\node[draw, dashed] {\parbox{...}{\includegraphics{pic.pdf}}}`.
+* as `\node[draw, dashed] {\includegraphics{pic.pdf}}` in a `tikzpicture`
+  environment,
+* as `\node[draw, dashed] {\mbox{\includegraphics{pic.pdf}}}` in a
+  `tikzpicture` environment, and
+* as `\node[draw, dashed] {\parbox{...}{\includegraphics{pic.pdf}}}` in a
+  `tikzpictur` environment.
 
 For the latter three the TikZ style of the node changes the behavior of the
 included *pdf file*; i.e., we obtain:
